@@ -137,17 +137,17 @@
                 <g class="svg-brand-g" id="brand-g">
                     <rect width="100%" height="100%" x="0%"  y="0%" class="svg-brand-background" fill="blue"/>
 
-                    <rect width="30%" height="30%" x="4%"  y="4%" class="svg-brand-dead" fill="white"/>
-                    <rect width="30%" height="30%" x="35%" y="4%" class="svg-brand-alive" fill="black"/>
-                    <rect width="30%" height="30%" x="66%" y="4%" class="svg-brand-alive" fill="black"/>
+                    <rect width="30%" height="30%" x="4%"  y="4%" class="svg-brand-a" fill="white"/>
+                    <rect width="30%" height="30%" x="35%" y="4%" class="svg-brand-b" fill="black"/>
+                    <rect width="30%" height="30%" x="66%" y="4%" class="svg-brand-b" fill="black"/>
 
-                    <rect width="30%" height="30%" x="4%"  y="35%" class="svg-brand-alive" fill="black"/>
-                    <rect width="30%" height="30%" x="35%" y="35%" class="svg-brand-alive" fill="black"/>
-                    <rect width="30%" height="30%" x="66%" y="35%" class="svg-brand-dead" fill="white"/>
+                    <rect width="30%" height="30%" x="4%"  y="35%" class="svg-brand-b" fill="black"/>
+                    <rect width="30%" height="30%" x="35%" y="35%" class="svg-brand-b" fill="black"/>
+                    <rect width="30%" height="30%" x="66%" y="35%" class="svg-brand-a" fill="white"/>
 
-                    <rect width="30%" height="30%" x="4%"  y="66%" class="svg-brand-dead" fill="white"/>
-                    <rect width="30%" height="30%" x="35%" y="66%" class="svg-brand-alive" fill="black"/>
-                    <rect width="30%" height="30%" x="66%" y="66%" class="svg-brand-dead" fill="white"/>
+                    <rect width="30%" height="30%" x="4%"  y="66%" class="svg-brand-a" fill="white"/>
+                    <rect width="30%" height="30%" x="35%" y="66%" class="svg-brand-b" fill="black"/>
+                    <rect width="30%" height="30%" x="66%" y="66%" class="svg-brand-a" fill="white"/>
                 </g>
             </svg>
 
@@ -201,8 +201,8 @@
         var randColor2 = randColor1 + 120;
         var randColor3 = randColor2 + 120;
 
-        $(".svg-brand-alive").css("fill", `hsl(${randColor1}, 100%, 80%)`);
-        $(".svg-brand-dead").css("fill", `hsl(${randColor2}, 55%, 80%)`);
+        $(".svg-brand-b").css("fill", `hsl(${randColor1}, 100%, 80%)`);
+        $(".svg-brand-a").css("fill", `hsl(${randColor2}, 55%, 80%)`);
         $(".svg-brand-background").css("fill", `hsl(${randColor3}, 55%, 20%`);
 
         // additional styles base on first three colors
@@ -222,3 +222,5 @@
 </script>
 
 </body>
+
+</html>
