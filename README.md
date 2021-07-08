@@ -13,7 +13,7 @@ Include the ```navbarDemo``` function to your desired controller on your localho
 
 ## Design
 
-Within the nav there are three sibling elements, the ```div.brand```, the ```div.menu```, and the ```div.menu-collapse```. The names are taken from the bootstrap convention, but there functions are slightly different. All elements should use **relative sizing** to the parent ```nav``` element. This prevents spaghetti code within the media queries. All elements should be vertically aligned with sufficient horizontal space between them for readability.
+Within the nav there are three sibling elements, the ```div.brand```, the ```div.menu```, and the ```div.menu-collapse```. The names are taken from the bootstrap convention, but there functions are slightly different. All elements should use **relative sizing** to the parent ```nav``` element. This prevents spaghetti code within the media queries. All elements should be **vertically centered** with sufficient horizontal space between them for readability.
 
 ### Brand
 
