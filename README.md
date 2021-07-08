@@ -35,8 +35,6 @@ $(window).on("resize", function() {
 });
 
 $(window).on("load", function() {
-
-	// menu show/hide
 	$("#svg-menu").on("click", function() {
 		$(".menu-collapse").toggle();
 	});
