@@ -27,7 +27,7 @@ The menu div contains two elements: ```div.menu-expanded``` and ```svg.svg-menu`
 
 ### Collapsible Menu
 
-This should contain all of the same information as the expanded menu. It is positioned directly below the parent ```<nav>``` using absolute to prevent distortion of page content. The ```z-index``` can be adjusted if other page content appears above the menu. The follwing javascript (or similar) is all that is needed for the menu to work properly.
+This should contain all of the same information as the expanded menu. It is positioned directly below the parent ```<nav>``` using absolute to prevent distortion of page content. The ```z-index``` can be adjusted if other page content appears above the menu. The follwing javascript (or similar) is all that is needed for the menu to work properly. There should not be multiple navbar menus, so the following selection by class should be sufficient.
 
 ```javascript
 $(window).on("resize", function() {
