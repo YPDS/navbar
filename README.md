@@ -25,6 +25,8 @@ The brand should float or be positioned to the left and have relative sizing to 
 
 The menu div contains two elements: ```div.menu-expanded``` and ```svg.svg-menu```. By default, the expanded menu items appear for screen sizes larger than 768px while the svg image is hidden. For screen sizes below 768px, the expanded menu is replaced with the single svg image. This image is a clickable item that toggles the display of the collapsible menu. As with the brand, make sure all menu items use relative sizing to prevent overflow and other unwanted behavior on different screen sizes. Some properties may need to be adjusted within the media queries, but this should be kept to a minimum.
 
+Do **NOT** use an `<a>` tag to wrap the menu collapse icon. Only use `<a>` tags for links with a crawlable `href` attribute, not just any interactive element. Some examples online use `<a>`tags, but this should be avoided. 
+
 ### Collapsible Menu
 
 This should contain all of the same information as the expanded menu. It is positioned directly below the parent ```<nav>``` using absolute to prevent distortion of page content. The ```z-index``` can be adjusted if other page content appears above the menu. The follwing javascript (or similar) is all that is needed for the menu to work properly. There should not be multiple navbar menus, so the following selection by class should be sufficient.
